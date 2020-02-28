@@ -1,0 +1,297 @@
+body {
+    color:#333;
+    font-family:'Roboto', sans-serif;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+form {
+    display:flex;
+    flex-basis:100%;
+}
+
+button {
+    display:flex;
+}
+
+button:hover, button:active, button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+/*===========================
+    Header and Navigation
+  =========================*/
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width:75em;
+    padding:8px 5px ;
+}
+
+.header-container {
+    z-index:1;
+    margin:0 0 15px;
+    box-shadow: 0 1px 5px #eee;
+    position:sticky;
+    top:0;
+    background-color:#fff;
+}
+
+#left-nav-image {
+    float:left;
+    margin-left:10px;
+}
+
+#right-nav-image {
+    float:right;
+    margin-right:20px
+}
+
+.search-wrapper {
+    flex-basis:45em;
+    margin: 0 40px;
+    align-items:stretch;
+}
+
+.search-bar {
+    flex-basis:100%;
+}
+
+input {
+    width:100%;
+    padding:6px;
+    border:1px solid #ccc;
+    border-right:none;
+    
+}
+
+.searchbar-button {
+    background: transparent;
+    border: none;
+}
+
+.search-button {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px #eee;
+    box-sizing: border-box;
+    height: 100%;
+    width: 70px;
+}
+
+.search-button:hover {
+  background: #f2f2f2;
+}
+
+.mag-glass {
+    width: 13px;
+    height: 13px;
+}
+
+/*===========================
+         Typography
+  =========================*/
+
+  h3 {
+    font-size:1.3em;
+    margin:0.5em 0;
+}
+
+h4 {
+    font-size:1.1em;
+    margin: 0;
+}
+h5 {
+    font-size:1em;
+    font-weight:bold;
+}
+
+p {
+    font-size:1em;
+    margin:0.5em 0;
+}
+
+a > img {
+    display:block;
+}
+
+ /*===========================
+       Content
+  =========================*/
+
+.content-wrapper {
+    max-width:70em; 
+    margin:auto;
+    padding:0;
+    align-items:flex-start;
+}
+
+.video-wrapper {
+    flex-direction:column;
+    align-items:stretch;
+    flex-basis:60%;
+}
+
+#video, #video-title, #video-info, #comments {
+    margin:0;
+}
+
+#video-title {
+    flex-direction:column;
+    align-items:stretch;
+    padding:20px 0;
+}
+
+.video-subscribe-wrapper, .video-buttons-wrapper {
+    justify-content:space-between;
+    margin: 10px 0 0;
+}
+
+.video-buttons-wrapper {
+    justify-content:flex-start;
+    margin: 10px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.video-subscribe-wrapper{
+    align-content:center;
+}
+
+.video-subscribe-buttons, .video-buttons {
+    height:40px
+}
+
+.video-buttons {
+    margin:0 10px 0 0;
+    color:#888;
+}
+
+.video-views-button {
+    flex-basis:70%;
+    justify-content:flex-start;
+    color:#888;
+    font-size:1.1em;
+}
+
+#video-subscribe {
+    padding:0 10px;
+    background-color:#ddd;
+    color:#444;
+    font-size:0.9em;
+}
+
+#video-info {
+    display:block;
+}
+
+/*===========================
+        Comments 
+  =========================*/
+
+#comments {
+    flex-direction:column;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.comment-wrapper {
+    width:100%;
+    margin:10px 0;
+    align-items:flex-start;
+    justify-content:flex-start; 
+}
+
+.comment-image {
+    flex-direction: column;
+}
+
+.comments-text {
+    flex-direction:column;
+    flex-basis:70%;
+    align-items:flex-start;
+    padding:0 10px;
+}
+
+
+
+textarea {
+    height: 4em;
+    width: 100%;
+}
+
+/*===========================
+        Sidebar 
+  =========================*/
+
+#sidebar {
+    flex-direction:column;
+    flex-basis:40%;
+    padding:0 15px;
+}
+
+.thumbs {
+    width:100%;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+
+.thumbs > a {
+    color:#333;
+    text-decoration:none;
+}
+
+.thumb-image {
+    flex-direction: column;
+    flex-basis:30%;
+    height: 100px;
+    margin:0 0 10px;
+}
+
+.thumb-title {
+    margin:0;
+}
+
+.sidebar-video-text {
+    flex-direction:column;
+    flex-basis:70%;
+    align-items:flex-start;
+    padding:0 10px;
+}
+
+.video-attribute, .video-views {
+    font-size: 0.9em;
+    color: #777;
+    margin: 5px 0 0;
+}
+ /*===========================
+      Media Queries
+  =========================*/
+
+@media only screen (max-width: 767px) { 
+   #sidebar {
+       display:none;
+   }
+
+   .content-wrapper {
+       width:100%;
+       padding: 0 25px;
+   }
+}
+
+
+/*===========================
+    Header and Navigation
+  =========================*/
